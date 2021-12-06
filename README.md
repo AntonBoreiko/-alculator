@@ -5,3 +5,5 @@
 2. `cd ./Calculator`
 3. `npm install`
 4. `npm run dev `
+
+<img src="./src/img/calc.gif">

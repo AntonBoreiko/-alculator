@@ -98,9 +98,11 @@ btn.addEventListener('click', (event) => {
     switch (sign) {
       case "+":
         a = (+a) + (+b)
+        a = (+a).toFixed(1)
         break
       case "-":
         a = a - b
+        a = (+a).toFixed(1)
         break
       case "x":
         a = a * b
@@ -121,11 +123,8 @@ btn.addEventListener('click', (event) => {
           sign = ''
           return
         }
-
         a = a / b
-        if (a.toString().length > 7) {
-          a = (+a).toFixed(2)
-        }
+        a = (+a).toFixed(1)
         break
     }
     finish = true
